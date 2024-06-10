@@ -1,0 +1,175 @@
+
+
+// main vsual slide
+
+function visual(){
+                
+  var $mVisual = $(".visual_wrap"),
+  $mVisual_slide = $mVisual.find(".slide"),
+  $mVisual_slide_stop = $mVisual.find(".slide_control .stop"),
+  $mVisual_slide_play = $mVisual.find(".slide_control .play"),
+  $mVisual_slide_next = $mVisual.find(".slide_control .next"),
+  $mVisual_slide_prev = $mVisual.find(".slide_control .prev");
+
+$mVisual_slide.on('init', function (e, slick) {
+  if (slick.$slides.length <= slick.options.slidesToShow) {
+    $mVisual_slide.siblings(".slide_control").hide();
+  } else {
+    $mVisual_slide.siblings(".slide_control").show();
+  }
+  $mVisual.find('.total').html('<span class="current">' + parseInt(slick.currentSlide + 1) + '</span> <span class="line"><em></em></span><span class="count">' + slick.slideCount + '</span>');
+});
+
+$mVisual_slide.on("afterChange", function (event, _$$slick, currentSlide) {
+  $mVisual.find('.total').html('<span class="current">' + parseInt(_$$slick.currentSlide + 1) + '</span> <span class="line"><em> </em></span><span class="count">' + _$$slick.slideCount + '</span>');
+
+});
+$mVisual_slide.slick({
+  slidesToShow: 1,
+  dots:true,
+  autoplay: true,
+  fade: false,
+  arrows:true,
+  appendDots: $mVisual.find('.dot'),
+  // useAutoplayToggleButton:false,
+  // appendArrows:$mVisual.find('.slide_control button'),
+  nextArrow: $mVisual_slide_next,
+  prevArrow: $mVisual_slide_prev,
+
+  responsive: [
+    {
+      breakpoint: 1025,
+      settings: {
+        slidesToShow: 1,
+        dots:true,
+        autoplay: true,
+        fade: false,
+        arrows:true,
+      // variableWidth:true,
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 1,
+        dots:true,
+        autoplay: true,
+        fade: false,
+        arrows:true,
+      // variableWidth:true,
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+        dots:true,
+        autoplay: true,
+        fade: true,
+        arrows:true,
+      //  variableWidth:false,
+      }
+    }
+   
+  ]
+
+});
+
+
+console.log($mVisual_slide_next,$mVisual_slide_prev)
+
+$mVisual_slide_stop.click(function () {
+  $(this).hide()
+  $mVisual_slide_play.show();
+  $mVisual_slide.slick("slickPause");
+});
+$mVisual_slide_play.click(function () {
+  $(this).hide()
+  $mVisual_slide_stop.show();
+  $mVisual_slide.slick("slickPlay")
+
+});
+
+}
+  
+
+function sc2_slide(){
+                
+  var $section2 = $(".cooking-walk"),
+  $section2_slide = $section2.find(".slide"),
+  $section2_slide_stop = $section2.find(".slide_control .stop"),
+  $section2_slide_play = $section2.find(".slide_control .play"),
+  $section2_slide_next = $section2.find(".slide_control .next"),
+  $section2_slide_prev = $section2.find(".slide_control .prev");
+
+$section2_slide.on('init', function (e, slick) {
+  if (slick.$slides.length <= slick.options.slidesToShow) {
+    $section2_slide.siblings(".slide_control").hide();
+  } else {
+    $section2_slide.siblings(".slide_control").show();
+  }
+  $section2.find('.total').html('<span class="current">' + parseInt(slick.currentSlide + 1) + '</span> <span class="line"><em></em></span><span class="count">' + slick.slideCount + '</span>');
+});
+
+$section2_slide.on("afterChange", function (event, _$$slick, currentSlide) {
+  $section2.find('.total').html('<span class="current">' + parseInt(_$$slick.currentSlide + 1) + '</span> <span class="line"><em> </em></span><span class="count">' + _$$slick.slideCount + '</span>');
+
+});
+$section2_slide.slick({
+  slidesToShow: 1,
+  dots: false,
+  autoplay: true,
+  fade: true,
+  // appendDots: $section2.find('.dot'),
+  nextArrow: $section2_slide_next,
+  prevArrow: $section2_slide_prev,
+
+});
+
+$section2_slide_stop.click(function () {
+  $(this).hide()
+  $section2_slide_play.show();
+  $section2_slide.slick("slickPause")
+});
+$section2_slide_play.click(function () {
+  $(this).hide()
+  $section2_slide_stop.show();
+  $section2_slide.slick("slickPlay")
+
+});
+}
+  
+
+
+
+//  프로그램안내
+var active_li =  $('#active_tabs .ul .li');
+$(document).on("mouseover ,focus","#active_tabs .ul .li", function (e) {
+  //active_li.removeClass("on");
+  $('#active_tabs .ul .li').removeClass("on")
+  $(this).addClass("on");
+
+  var li_idx =  $(this).index();
+  let imgSrc = $(this).data("imgSrc");
+
+  $("#post .img-link img").attr("src",imgSrc);
+});
+
+
+/* 추후 삭제  sns*/
+
+
+// $(document).ready(function(){
+
+//   var sns_btn= $(".sns-link");
+//   console.log(sns_btn);
+
+//   sns_btn.click(function(e){
+//     e.preventDefault()
+//     alert("서비스 준비중입니다.")
+
+//   });
+
+// })
+
+

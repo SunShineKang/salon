@@ -1,0 +1,30 @@
+  /*탭메뉴*/
+  $('[data-type=tab]').each(function(key, item) {
+        var _$tabmenu;
+        var tabIdName = 'tab' + key;
+        this.id = tabIdName;
+        var tabId = '#' + tabIdName;
+        var n= 0;
+
+        var $tab = $(tabId).find('> .board__nav-item');
+        var $title = $(tabId).find('> .board__nav-item > .board__title');
+
+          $title.next('.board__content').hide();
+          $title.next('.board__more').hide();
+        $tab.eq(n).addClass('active');
+        $tab.eq(n).children('.board__title').next('.board__content').show();
+      $tab.eq(n).children('.board__title').next('.board__more').show();
+
+        $title.on("click",function(){
+        	var url;
+            if ( $(this).attr("href") ) url = $(this).attr('href').attr('target',$(this).attr('target'));
+            $title.next('.board__content').hide();
+            $title.next('.board__more').hide();
+            $title.parent().removeClass('active');
+            $(this).next('.board__content').show();
+            $(this).next('.board__more').show();
+            $(this).parent().addClass('active');
+            $("[data-slider]").slick("setPosition");
+            return false;
+        });
+  });

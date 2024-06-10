@@ -1,0 +1,434 @@
+@font-face {
+    font-family: 'yg-jalnan';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    line-height: 1;
+    color: #333;
+}
+
+.header {
+    width: 1920px;
+    height: 105px;
+    margin: auto;
+    border-bottom: 1px solid #e4e1e1;
+    display: flex;
+    
+    align-items: center;
+    
+    
+    
+}
+.header .name {
+    width: 281px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 43px;
+    
+    
+}
+.header .name .logo h4 {
+    font-size: 15px;
+}
+.header .name div p {
+    font-weight: 100;
+}
+.header .name .logo span {
+    
+}
+.header .name .logo p {
+    font-size: 4px;
+}
+.header .name .main h1 {
+    font-size: 19px;
+    font-family: 'yg-jalnan';
+}
+
+.header .nav {
+    width: 800px;
+    margin-left: 200px;
+   
+
+}
+.header .nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+.header .nav ul li {
+    padding: 0 25px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.header .menu {
+
+    display: flex;
+    align-items: center;
+    margin-left: 420px;
+    gap:40px;
+}
+.header .menu div img {
+    width: 29px;
+    height: 29px;
+    object-fit: cover;
+}
+.header .menu div span {
+    font-size: 14px;
+}
+
+
+
+.section01 .text {
+    
+    width: 1300px;
+    display: flex;
+    margin: 100px auto;
+    align-items: center;
+    gap: 20px;
+    
+}
+.section01 .text h1 {
+    font-size: 70px;
+    font-family: 'yg-jalnan';
+    margin-top: 30px;
+    
+}
+
+.section01 .text strong {
+    font-size: 24px;
+    margin-left: 330px;
+    font-family: 'yg-jalnan';
+    margin-top: 30px;
+}
+.section01 .text figure {
+    width: 258px;
+    height: 108px;
+    
+    
+}
+.section01 .text figure  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.section01 .text a img {
+    margin-top: 30px;
+}
+.section01 {
+    margin: 200px auto;
+}
+
+    .section01 .inner03 {
+      
+      
+      
+    }
+
+    .section01 .inner03 .swiper-wrapper {
+        
+        
+      
+       
+      
+    }
+    .swiper-button-next, .swiper-button-prev {
+        width: 78px;
+        height: 78px;
+        
+        background-color: #fff;       
+        box-shadow: 0px 5px 20px rgba(0, 15, 67, 0.1);
+        border-radius: 50%;
+        margin: 230px 500px 0;
+         
+         
+            
+    }
+    .swiper-button-next:hover {
+        border: 1px solid #94aaf5;
+    }
+    .swiper-button-prev:hover {
+        border: 1px solid #94aaf5;
+    }
+    .section01 .swiper-slide-box .swiper-slide {
+        width: 843px;
+        height: 476px;
+    }
+
+    .section01 .swiper-slide-box .swiper-slide img {
+      
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+
+    }
+    .section02 {
+     background-color: #F3F8FF;
+     
+    }
+
+    .section02 .inner {
+        width: 1280px;
+        margin: 250px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section02 .inner .item01 {
+        width: 750px;
+
+    }
+    .section02 .inner .item01 .text {
+        
+        display: inline-block;
+        margin-left: 40px;
+        margin-bottom: 58px;
+    }
+    .section02 .inner .item01 .text h2 {
+        font-size: 45px;
+        margin-bottom: 13px;
+
+    }
+    .section02 .inner .item01 .text span {
+
+        font-size: 20px;
+        margin-top: 20px;
+    
+    }
+    .section02 .inner .item01 .text p {
+        font-size: 20px;
+        margin-bottom: 58px;
+    }
+
+    .section02 .inner .item01 .box {
+        width: 750px;
+        height: 142px;
+        border-radius: 30px;
+        border: 1px;
+        background-color: #fff;
+        display: flex;
+        margin-bottom: 30px;
+        box-shadow: 0px 5px 20px rgba(0, 15, 67, 0.1);
+    }
+    .section02 .inner .item01 .box .one {
+        width: 80px;
+        height: 80px;
+        background-color: rgb(72, 53, 177);
+        border-radius: 50px;
+        overflow: hidden;
+        margin: 31px;
+    }
+    .section02 .inner .item01 .box .one p {
+        font-size: 18px;
+        text-align: center;
+        line-height: 80px;
+        color: #fff;
+    }
+    .section02 .inner .item01 .box .list {
+        
+    }
+    .section02 .inner .item01 .box .list .wrap {
+        display: flex;
+        
+        align-items: center;
+    } 
+    .section02 .inner .item01 .box .list .wrap div img {
+        width: 16px;
+        height: 18px;
+    }
+    .section02 .inner .item01 .box .list .wrap .wrap_1 {
+        display: flex;
+        margin-top: 7px;
+        gap: 3px;
+    }
+    .section02 .inner .item01 .box .list .wrap .wrap_2 {
+        display: flex;
+    }
+    .section02 .inner .item01 .box .list h4 {
+        font-size: 24px;
+        margin-top: 35px;
+    }
+    .section02 .inner .item01 .box .list .wrap{
+        margin-top: 10px;
+    }
+    .section02 .inner  .item02 .slide {
+        width: 446px;
+        height: 630px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    
+    
+    .section02 .inner  .item02 .swiper01 {
+        width: 445px;
+        height: 800px;
+        
+        
+    }
+    .section02 .inner  .item02 .swiper01 .swiper-wrapper  {
+        
+        
+        
+      }
+    .section02 .inner  .item02 .swiper01 .swiper-wrapper img {
+        width: 445px;
+        height: 630px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .section02 .inner .item01 .box:hover {
+        border: 2px solid #4478FF;
+    }
+    
+    .section03 {
+        
+    } 
+    .section03 .inner {
+        width: 1340px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .section03 .inner .text05 h3 {
+        font-family: 'yg-jalnan';
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+    .section03 .inner .text05 p {
+        font-size: 20px;
+        margin-bottom: 60px;
+        font-weight: 500;
+    }
+    .section03 .inner .box {
+        display: flex;
+        justify-content: space-between;
+    }
+    .section03 .inner .box .item03 {
+        width: 620px;
+        height: 667px;
+    }
+    .section03 .inner .box .item03 figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .section03 .inner .box .item04 {
+        width: 620px;
+        height: 620px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+    .section03 .inner .box .item04 figure {
+        width: 296px;
+        height: 296px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    .section03 .inner .box .item04 figure img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .section04 .text06 {
+        width: 1280px;
+        
+        margin: 200px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section04 .text06 div h2 {
+        font-family: 'yg-jalnan';
+        font-size: 45px;
+    }
+    .section04 .text06 div ul {
+        display: flex;
+        
+    }
+    .section04 .text06 div img {
+        width: 20px;
+        height: 20px;
+        margin-left: 557px;
+        margin-top: 2px;
+        
+        
+    }
+    .section04 .text06 div ul li {
+        font-size: 22px;
+        list-style-type: disc;
+        margin-right: 30px;
+        line-height: 1;
+        
+
+    }
+    .section04 .text06 div ul li:first-child {
+        list-style: none;
+    }
+
+    .section04 .box06 {
+        width: 1280px;
+        height: 88px;
+        margin: 30px auto;
+        border-radius: 20px;
+        box-shadow: 0px 5px 20px rgba(0, 15, 67, 0.1);
+        
+    }
+    .section04 .box06 div {
+        display: flex;
+        font-size: 18px;
+        padding: 35px 50px 30px;
+        justify-content: space-between;
+    }
+    .section04 .box06 div h4 {
+        color: #FF8A00;
+    }
+    .section04 .box06 div strong {
+        margin-right: 630px;
+        
+    }
+    .section04 .box06 div h5 {
+        
+    }
+    .section04 .box06:hover {
+        border: 1px solid #9d9df5;
+    }
+
+    .section04 .sns {
+        width: 345px;
+        height: 53px;
+        margin: 100px auto;
+        display: flex;
+        gap:20px;
+        
+    }
+    .section04 .sns figure {
+        width: 53px;
+        height: 53px;
+        
+    }
+    .section04 .sns figure img {
+        width: 100%;
+        height: 100%;
+    }
+    .section04 .box06:first div strong {
+        gap: 50px;
+    }
